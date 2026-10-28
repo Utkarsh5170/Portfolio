@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Utkarsh | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --ink: #14213d;
+      --muted: #55607a;
+      --accent: #2f5bea;
+      --line: #d5dbe8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Sora", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+    }
+    a { color: var(--accent); }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+    /* ---------- Top navigation ---------- */
+    nav {
+      display: flex; gap: 24px; flex-wrap: wrap;
+      max-width: 760px; margin: 0 auto; padding: 24px 20px 0;
+    }
+    nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
+    nav a:hover { color: var(--accent); }
+
+    main { max-width: 760px; margin: 0 auto; padding: 0 20px 80px; }
+    section { padding-top: 72px; }
+    h1 { font-size: clamp(2.4rem, 8vw, 4rem); font-weight: 800; line-height: 1.1; }
+    h2 { font-size: 1.5rem; font-weight: 600; margin-bottom: 16px; }
+    p { max-width: 62ch; color: var(--muted); }
+
+    /* ---------- Hero ---------- */
+    .hero { padding-top: 96px; }
+    .hero p { margin-top: 20px; font-size: 1.1rem; }
+    .button {
+      display: inline-block; margin-top: 28px; padding: 12px 22px;
+      background: var(--accent); color: #fff; text-decoration: none; font-weight: 600;
+    }
+    .button:hover { background: var(--ink); }
+
+    /* ---------- Skills ---------- */
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; }
+    .skills li { border: 1px solid var(--line); padding: 6px 14px; color: var(--ink); }
+
+    /* ---------- Projects ---------- */
+    .project { border-left: 4px solid var(--accent); padding-left: 18px; margin-bottom: 32px; }
+    .project h3 { font-size: 1.1rem; }
+    .project p { margin: 6px 0 8px; }
+
+    footer { max-width: 760px; margin: 0 auto; padding: 24px 20px 48px; color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+
+    <!-- HERO: the first thing people see -->
+    <section class="hero">
+      <!-- CHANGE THIS: your name and one line about you -->
+      <h1>Hi, I'm Utkarsh.</h1>
+      <p>I'm a student learning to build things for the web. This site collects what I'm making along the way.</p>
+      <a class="button" href="#projects">See my projects</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About me</h2>
+      <!-- CHANGE THIS: 2-3 sentences. Your course, college, what you enjoy, what you want to learn next. -->
+      <p>I'm studying B.Tech CSAI at NSUT. I enjoy algorithms, web, Tech and I'm currently learning HTML, CSS and JavaScript by building small projects.</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <!-- CHANGE THIS: only list what you can actually talk about. Add or delete <li> lines. -->
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Git and GitHub</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <!-- CHANGE THIS: copy this whole block for each project. -->
+      <div class="project">
+        <h3>Held-Karp TSP Visualizer</h3>
+        <p>An interactive visualizer that shows how bitmask dynamic programming solves the Travelling Salesman Problem, step by step.</p>
+        <a href="https://github.com/Utkarsh5170">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>This portfolio</h3>
+        <p>Built with plain HTML and CSS, hosted free on GitHub Pages.</p>
+        <a href="https://github.com/Utkarsh5170/Portfolio">View on GitHub</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <!-- CHANGE THIS: your real email and profile links -->
+      <p>Want to talk? Email me at <a href="jainutkarsh086@gmail.com">jainutkarsh086@gmail.com</a> or find me on <a href="https://github.com/Utkarsh5170">GitHub</a>.</p>
+    </section>
+
+  </main>
+
+  <footer>&copy; 2026 Utkarsh</footer>
+
+</body>
+</html>
